@@ -11,8 +11,8 @@
 
 # RapidFort hardened image for Argo CD Big-Bang Iron Bank
 
-## Critical Notice
-<h2>As of 7/2024 community-images will be gated. Please register for free at <a style="color:blue;" href="https://www.rapidfort.com/get-a-demo">www.rapidfort.com</a> to access these images</h2>
+## ⚠️ Critical Notice
+<b>As of 7/2024 community-images will be gated. Please register for free at <a style="color:blue;" href="https://www.rapidfort.com/get-a-demo">www.rapidfort.com</a> to access these images</b>
 
 
 RapidFort has optimized and hardened this Argo CD Big-Bang Iron Bank container image. This container is free to use and has no license limitations.
