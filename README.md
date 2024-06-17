@@ -10,6 +10,8 @@
 [![FOSSA Status][fossa-badge]][fossa-link]
 
 ### ⚠️ CRITICAL NOTICE
+<hr>
+
 <b>As of 7/2024 community-images will be gated. Please register for free at <a style="color:blue;" href="https://www.rapidfort.com/get-a-demo">www.rapidfort.com</a> to access these images</b>
 
 
