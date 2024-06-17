@@ -14,10 +14,11 @@
 <table style="border: 2px solid red; padding: 10px; background-color: #f5f5f5; width: 100%;">
   <tr>
     <td>
-      <h4>⚠️ As of 7/2024 community-images will be gated. Please register for free at <a href="https://www.rapidfort.com/get-a-demo" style="color:blue;">www.rapidfort.com</a> to access these images.</h4>
+      <h4>⚠️ &nbsp;As of 7/2024 community-images will be gated. Please register for free at <a href="https://www.rapidfort.com/get-a-demo" style="color:blue;">www.rapidfort.com</a> to access these images.</h4>
     </td>
   </tr>
 </table>
+
 
 
 
