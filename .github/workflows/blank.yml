@@ -1,0 +1,36 @@
+
+name: Image Creation Run
+
+on:
+
+  schedule:
+  - cron: '0 */4 * * *'
+
+  workflow_dispatch:
+
+permissions: read-all
+
+jobs:
+  airflow:
+    runs-on: ubuntu-latest
+
+    environment: actions-cicd
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Start minikube
+        with:
+          memory: 6g
+        uses: medyagh/setup-minikube@master
+      - name: Check k8s cluster !
+        run: kubectl get pods -A
+      - name: Import Coverage Tests
+        uses: actions/checkout@v4
+        with:
+          repository: rapidfort/community-images-core
+          token: ${{ secrets.ACCESS_TOKEN }}
+      - name: Create images and publish to dockerhub
+        run: |
+            ls
+            ls community-images-core/community_images_coverage/
+          
