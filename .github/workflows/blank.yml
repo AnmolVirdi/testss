@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: rapidfort/community-images-core
-          token: ${{ secrets.ACCESS_TOKEN }}
+          token: ${GITHUB_TOKEN}
       - name: Create images and publish to dockerhub
         run: |
             ls
