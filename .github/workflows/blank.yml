@@ -18,12 +18,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - name: Start minikube
-        with:
-          memory: 6g
-        uses: medyagh/setup-minikube@master
-      - name: Check k8s cluster !
-        run: kubectl get pods -A
       - name: Import Coverage Tests
         uses: actions/checkout@v4
         with:
