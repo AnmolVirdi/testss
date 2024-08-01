@@ -14,15 +14,17 @@ jobs:
   airflow:
     runs-on: ubuntu-latest
 
-    environment: actions-cicd
+    environment: action-cicd
 
     steps:
       - uses: actions/checkout@v4
+      - name: test
+        run: echo ${{ secrets.ACCESS_TOKEN}}
       - name: Import Coverage Tests
         uses: actions/checkout@v4
         with:
           repository: rapidfort/community-images-core
-          token: ${GITHUB_TOKEN}
+          token: ${{ secrets.ACCESS_TOKEN}}
       - name: Create images and publish to dockerhub
         run: |
             ls
